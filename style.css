@@ -187,7 +187,7 @@ header {
 
   .info {
     margin: 0;
-    margin: 2rem auto;
+    margin: 2rem 3rem;
   }
 
   .content .color {
@@ -196,29 +196,5 @@ header {
 
   body {
     overflow-y: scroll;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  .booking-btn {
-    align-self: center;
-  }
-  header {
-    z-index: 300;
-    position: absolute;
-    top: 800px;
-    width: -webkit-fill-available;
-  }
-
-  .nav-menu {
-    top: 490px;
-    z-index: 900;
-    box-shadow: -20px 0px 18px 11px hsl(0deg 0% 0% / 5%);
-  }
-
-  .content {
-    margin-top: 0;
-    margin-left: 0.2rem;
-    padding-left: 0.4rem;
   }
 }

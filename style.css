@@ -183,11 +183,13 @@ header {
 
   .vincent-foto {
     margin-top: 2rem;
+    width: 100%;
+    margin-right: 4rem;
   }
 
   .info {
     margin: 0;
-    margin: 2rem 3rem;
+    margin: 2rem 1rem;
   }
 
   .content .color {

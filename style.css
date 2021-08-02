@@ -7,10 +7,11 @@
 :root {
   --clr-accent: hsl(212, 100%, 39%);
   --clr-hover: hsl(212, 100%, 60%);
+  --clr-body: hsl(33, 44%, 95%);
 }
 
 body {
-  background-color: hsl(33, 44%, 95%);
+  background-color: var(--clr-body);
   font-family: "Nunito Sans", sans-serif;
 }
 
@@ -54,6 +55,7 @@ header {
   padding: 1rem 1.5rem;
   position: fixed;
   width: 100vw;
+  background-color: var(--clr-body);
 }
 
 .hamburger {
@@ -147,7 +149,7 @@ header {
   .nav-menu {
     position: fixed;
     left: -100%;
-    top: 5rem;
+    top: 4rem;
     flex-direction: column;
     background: #f8f3ed;
     width: 100%;

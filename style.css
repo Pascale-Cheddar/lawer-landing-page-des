@@ -4,11 +4,14 @@
   box-sizing: border-box;
   font-size: 62.5%;
 }
+:root {
+  --clr-accent: hsl(212, 100%, 39%);
+  --clr-hover: hsl(212, 100%, 60%);
+}
 
 body {
   background-color: hsl(33, 44%, 95%);
   font-family: "Nunito Sans", sans-serif;
-  overflow: hidden;
 }
 
 .wrapper h1 {
@@ -49,6 +52,8 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1.5rem;
+  position: fixed;
+  width: 100vw;
 }
 
 .hamburger {
@@ -68,6 +73,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: 20px;
 }
 .nav-item {
   margin-left: 5rem;
@@ -80,7 +86,8 @@ header {
 }
 
 .nav-link:hover {
-  color: #e6dc01;
+  color: var(--clr-hover);
+  transition: color 300ms ease-in;
 }
 
 .content {
@@ -95,10 +102,10 @@ header {
 .vincent-foto {
   grid-column: 2;
   grid-row: 3;
-  box-shadow: 14px 12px 0px 1px hsl(60deg 100% 42%);
+  box-shadow: 14px 12px 0px 1px var(--clr-accent);
 }
 .color {
-  background-color: hsl(60, 100%, 42%);
+  background-color: var(--clr-accent);
   grid-row: 3 / -1;
   grid-column: 5 /7;
 }
@@ -132,7 +139,8 @@ header {
 
 .booking-btn:hover {
   cursor: pointer;
-  background-color: hsl(60, 100%, 39%);
+  transition: all 500ms ease-in-out;
+  background-color: var(--clr-hover);
   box-shadow: 0 0 5px 0 hsla(0, 0%, 22%, 0.774);
 }
 @media only screen and (max-width: 768px) {
@@ -160,6 +168,7 @@ header {
   .hamburger {
     display: block;
     cursor: pointer;
+    margin-right: 20px;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -184,9 +193,9 @@ header {
   }
 
   .vincent-foto {
-    margin-top: 2rem;
-
+    margin-top: 12rem;
     margin-right: 4rem;
+    height: fit-content;
   }
 
   .info {

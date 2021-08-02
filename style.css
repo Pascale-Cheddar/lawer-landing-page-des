@@ -13,6 +13,7 @@
 body {
   background-color: var(--clr-body);
   font-family: "Nunito Sans", sans-serif;
+  overflow: hidden;
 }
 
 .wrapper h1 {
@@ -146,6 +147,9 @@ header {
   box-shadow: 0 0 5px 0 hsla(0, 0%, 22%, 0.774);
 }
 @media only screen and (max-width: 768px) {
+  body {
+    overflow: scroll;
+  }
   .nav-menu {
     position: fixed;
     left: -100%;
